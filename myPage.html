@@ -1,0 +1,61 @@
+<div class="page-group">
+  <div class="page" id="myPage">
+    <!-- 隐藏顶部通栏 -->
+    <div class="topbarShowOrHide" style="position:fixed;top:0px">
+      <a class=" button-nav pull-left getBackToPage" href="javascript:history.go(-1)">
+        <span style="padding-left:20px;width: 0.5rem;height:1.3rem;padding-top: 0.4rem;margin-top:6px">
+          <img src="./images/blakLeft.png" alt="" style="width: 1rem;height:1.3rem;padding-top: 0.4rem;margin-top:10px">
+        </span>
+      </a>
+      <h1 class="commentNum" style="line-height:2.5rem;color:#333;">个人主页</h1>
+    </div>
+    <div class="content  infinite-scroll infinite-scroll-bottom " id="myPageContentAll"  data-distance="100" >
+      <!-- 默认的下拉刷新层 -->
+      <!-- <div class="pull-to-refresh-layer">
+        <div class="preloader"></div>
+        <div class="pull-to-refresh-arrow"></div>
+      </div> -->
+      <header class="info">
+        <div class="topbar">
+          <a class="button-link button-nav pull-left getBackToPage" href="javascript:history.go(-1);">
+            <span style="padding-left: 20px">
+              <img src="./images/leftBack.png" alt="" style="width:9px;margin-top:16px;">
+            </span>
+          </a>
+        </div>
+        <div class="topContent">
+          <span style="padding-left: 20px">
+            <img src="./images/info.png" alt="" style="width: 3rem;height:3rem;padding-top: 0.4rem;margin-top:10px;flex:1">
+          </span>
+          <div class="userInfo">
+            <div class="userName" style="font-size:16px" id="userName">美篇用户</div>
+            <div class="loginState" id="loginState">未登录</div>
+          </div>
+        </div>
+        <div class="topBase">
+          <span class="attention">关注 &nbsp;<span class="attentionNum">0</span></span>
+          <span>|</span>
+          <span class="fass">粉丝 &nbsp;<span class="fassNum">0</span></span>
+        </div>
+      </header>
+      <div class="contentMe ">
+        <!-- 模版渲染 -->
+        <div class="totalTitle">
+          <a class="pull-left ">全部文章</a>
+          <!-- <span class="pull-right">
+            <img src="./images/file.png" alt="" style="width:20px">
+          </span> -->
+        </div>
+        <div class="myPageContent" id="myPageContent">
+         <!-- 模版渲染 -->
+       </div>
+      </div>
+      <div class="infinite-scroll-preloader" id="preloader_tab2" style="display: flex;justify-content: center;">
+        <div class="preloader" id="loadMoreloding"></div>
+        <div id="noMore" style="margin-top:10px;">
+          <a onclick="clickLoadMore()">没有更多了</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

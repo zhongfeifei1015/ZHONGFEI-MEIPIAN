@@ -1,0 +1,23 @@
+#active1 .editor_model {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: #555;
+}
+#active1 .editor_model ul{
+  white-space: nowrap;
+  overflow-x: auto;
+}
+#active1 .editor_model ul li{
+  width: 40%;
+  display: inline-block;
+}
+#active1 .editor_model ul li img{
+  width: 100%;
+  height: 80px;
+}
+#active1 #modelActive{
+  line-height: 30px;
+  color: #fff;
+}
